@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Winnipeg Pro Drain Cleaning</title>
+  <style>
+    /* Background */
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      color: #333;
+      background: url('https://passionate-mnprtchhl2992.wordpress.com/wp-content/uploads/2025/07/oip.jpg') no-repeat center center fixed;
+      background-size: cover;
+      animation: backgroundFade 5s ease-in-out;
+    }
+
+    @keyframes backgroundFade {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+
+    /* Container */
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Logo Section */
+    .logo-section {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .logo-section img {
+      max-width: 200px;
+      border-radius: 12px;
+      animation: pulse 3s infinite alternate;
+    }
+
+    @keyframes pulse {
+      from {transform: scale(1);}
+      to {transform: scale(1.05);}
+    }
+
+    .logo-section h1 {
+      font-size: 32px;
+      margin-top: 10px;
+      color: #003366;
+    }
+
+    .logo-section p {
+      font-size: 18px;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .hero-text {
+      flex: 1 1 300px;
+    }
+
+    .hero-text h2 {
+      font-size: 26px;
+      color: #003366;
+      margin-bottom: 10px;
+    }
+
+    .hero-text ul {
+      margin: 20px 0;
+      padding-left: 20px;
+    }
+
+    .hero-text ul li {
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .call-button {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #0066cc;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .call-button:hover {
+      background: #004a99;
+    }
+
+    .hero-image {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      animation: fadeIn 2s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    /* Contact Section */
+    .contact-section {
+      margin-top: 40px;
+      text-align: center;
+      animation: fadeInUp 1.5s ease forwards;
+    }
+
+    .contact-section h3 {
+      color: #003366;
+      margin-bottom: 10px;
+    }
+
+    .contact-section a {
+      padding: 12px 20px;
+      background: #28a745;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-section a:hover {
+      background: #1e7e34;
+    }
+
+    /* Popup Modal */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.5);
+      align-items: center;
+      justify-content: center;
+      animation: fadeIn 0.3s ease forwards;
+    }
+
+    .modal-content {
+      background-color: #fff;
+      padding: 30px 20px;
+      border-radius: 12px;
+      max-width: 400px;
+      width: 90%;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      position: relative;
+      animation: slideIn 0.3s ease forwards;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Close Button */
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #999;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .close-btn:hover {
+      color: #333;
+    }
+
+    /* Form Styles */
+    form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #003366;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      font-family: inherit;
+    }
+
+    form button {
+      background-color: #28a745;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      width: 100%;
+    }
+
+    form button:hover {
+      background-color: #1e7e34;
+    }
+
+    /* Responsive */
+    @media(max-width: 700px) {
+      .hero {
+        flex-direction: column;
+      }
+      .hero-image img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Logo Section -->
+    <div class="logo-section">
+      <img src="https://passionate-mnprtchhl2992.wordpress.com/wp-content/uploads/2025/07/2.png.png" alt="Winnipeg Pro Drain Cleaning Services" />
+      <h1>Winnipeg Pro Drain Cleaning</h1>
+      <p>Fast, Reliable, 24/7 Emergency Services</p>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero-text">
+        <h2>Your Local Drain Experts</h2>
+        <p>From clogged sinks to sewer inspections, we handle it all—fast, affordable, and available 24/7 in Winnipeg.</p>
+        <ul>
+          <li>✔ Drain Cleaning</li>
+          <li>✔ Hydro Jetting</li>
+          <li>✔ Sewer Camera Inspection</li>
+          <li>✔ Emergency Services</li>
+        </ul>
+        <a href="tel:2043994413" class="call-button">Call Now: 204-399-4413</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://passionate-mnprtchhl2992.wordpress.com/wp-content/uploads/2025/07/chatgpt-image-jul-27-2025-12_56_38-pm.png" alt="Drain Cleaning Winnipeg" />
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+      <h3>Contact Us</h3>
+      <p>Open 24/7 • Call or Book Online Anytime</p>
+      <a id="bookOnlineBtn">Book Online</a>
+    </div>
+  </div>
+
+  <!-- Modal Popup Contact Form -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h2>Book Online</h2>
+      <form id="contactForm">
+        <label for="name">Name*</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Elements
+    const modal = document.getElementById('contactModal');
+    const openBtn = document.getElementById('bookOnlineBtn');
+    const closeBtn = document.getElementById('closeModal');
+    const form = document.getElementById('contactForm');
+
+    // Open modal
+    openBtn.addEventListener('click', () => {
+      modal.style.display = 'flex';
+    });
+
+    // Close modal
+    closeBtn.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+
+    // Close modal when clicking outside content
+    window.addEventListener('click', e => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+
+    // Handle form submit
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+
+      // Normally here you'd send data to server or email service
+
+      alert('Thank you for booking! We will get back to you shortly.');
+
+      form.reset();
+      modal.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
