@@ -2,348 +2,290 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Winnipeg Pro Drain Cleaning</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    /* Background */
     body {
       margin: 0;
-      font-family: sans-serif;
+      font-family: 'Poppins', sans-serif;
       color: #333;
-      background: url('https://passionate-mnprtchhl2992.wordpress.com/wp-content/uploads/2025/07/oip.jpg') no-repeat center center fixed;
-      background-size: cover;
-      animation: backgroundFade 5s ease-in-out;
+      background: linear-gradient(to right, #c2e9fb, #a1c4fd);
+      background-attachment: fixed;
+      animation: bgFade 3s ease-in-out;
     }
-
-    @keyframes backgroundFade {
-      0% {opacity: 0;}
-      100% {opacity: 1;}
+    @keyframes bgFade {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
-
-    /* Container */
     .container {
       max-width: 1100px;
       margin: auto;
       padding: 40px 20px;
-      background: rgba(255, 255, 255, 0.9);
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
-      animation: fadeInUp 1s ease forwards;
+      background: #ffffffcc;
+      border-radius: 14px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      animation: fadeInUp 1.2s ease-out forwards;
     }
-
     @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(60px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-
-    /* Logo Section */
-    .logo-section {
+    .logo-section, .contact-section {
       text-align: center;
-      margin-bottom: 40px;
+      padding: 10px;
     }
-
     .logo-section img {
-      max-width: 200px;
+      max-width: 180px;
       border-radius: 12px;
-      animation: pulse 3s infinite alternate;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
-
-    @keyframes pulse {
-      from {transform: scale(1);}
-      to {transform: scale(1.05);}
+    h1, h2, h3 {
+      color: #002244;
     }
-
-    .logo-section h1 {
-      font-size: 32px;
-      margin-top: 10px;
-      color: #003366;
-    }
-
-    .logo-section p {
-      font-size: 18px;
-    }
-
-    /* Hero Section */
     .hero {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 25px;
       align-items: center;
+      margin-top: 30px;
     }
-
-    .hero-text {
-      flex: 1 1 300px;
-    }
-
-    .hero-text h2 {
-      font-size: 26px;
-      color: #003366;
-      margin-bottom: 10px;
-    }
-
-    .hero-text ul {
-      margin: 20px 0;
-      padding-left: 20px;
-    }
-
-    .hero-text ul li {
-      margin-bottom: 8px;
-      font-weight: bold;
-    }
-
-    .call-button {
-      display: inline-block;
-      padding: 12px 20px;
-      background: #0066cc;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
-    }
-
-    .call-button:hover {
-      background: #004a99;
-    }
-
-    .hero-image {
-      flex: 1 1 300px;
-      text-align: center;
-    }
-
     .hero-image img {
       width: 100%;
-      max-width: 400px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-      animation: fadeIn 2s ease forwards;
+      max-width: 450px;
+      border-radius: 14px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
     }
-
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
+    .hero-image img:hover {
+      transform: scale(1.03);
     }
-
-    /* Contact Section */
-    .contact-section {
-      margin-top: 40px;
-      text-align: center;
-      animation: fadeInUp 1.5s ease forwards;
+    ul {
+      list-style: none;
+      padding-left: 0;
+      font-size: 16px;
     }
-
-    .contact-section h3 {
-      color: #003366;
-      margin-bottom: 10px;
+    li::before {
+      content: '✅';
+      color: #28a745;
+      margin-right: 8px;
     }
-
-    .contact-section a {
-      padding: 12px 20px;
-      background: #28a745;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 8px;
+    .call-button, .book-btn {
+      padding: 14px 24px;
+      background: linear-gradient(135deg, #ff6a00, #ee0979);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: 600;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
-
-    .contact-section a:hover {
-      background: #1e7e34;
+    .call-button:hover, .book-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
     }
-
-    /* Popup Modal */
-    .modal {
-      display: none; /* Hidden by default */
+    .modal, .thankyou-modal {
+      display: none;
       position: fixed;
       z-index: 1000;
       left: 0;
       top: 0;
       width: 100%;
       height: 100%;
-      overflow: auto;
-      background-color: rgba(0,0,0,0.5);
-      align-items: center;
+      background-color: rgba(0,0,0,0.6);
       justify-content: center;
-      animation: fadeIn 0.3s ease forwards;
+      align-items: center;
     }
-
-    .modal-content {
-      background-color: #fff;
-      padding: 30px 20px;
-      border-radius: 12px;
-      max-width: 400px;
+    .modal-content, .thankyou-content {
+      background: white;
+      padding: 30px;
+      border-radius: 14px;
       width: 90%;
-      box-shadow: 0 0 20px rgba(0,0,0,0.3);
-      position: relative;
-      animation: slideIn 0.3s ease forwards;
+      max-width: 400px;
+      text-align: center;
+      animation: popUp 0.4s ease;
     }
-
-    @keyframes slideIn {
-      from {
-        opacity: 0;
-        transform: translateY(-50px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    @keyframes popUp {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
     }
-
-    /* Close Button */
     .close-btn {
       position: absolute;
       top: 10px;
       right: 15px;
-      font-size: 24px;
-      font-weight: bold;
-      color: #999;
+      font-size: 22px;
       cursor: pointer;
-      transition: color 0.3s ease;
+      color: #666;
     }
-
     .close-btn:hover {
-      color: #333;
+      color: #000;
     }
-
-    /* Form Styles */
-    form label {
-      display: block;
-      margin-bottom: 6px;
-      font-weight: bold;
-      color: #003366;
-    }
-
     form input, form textarea {
       width: 100%;
-      padding: 10px;
+      padding: 12px;
       margin-bottom: 15px;
       border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 14px;
+      border-radius: 8px;
       font-family: inherit;
     }
-
     form button {
-      background-color: #28a745;
+      background-color: #0077cc;
       color: white;
-      padding: 12px 20px;
+      padding: 12px;
       border: none;
       border-radius: 8px;
-      cursor: pointer;
-      font-size: 16px;
-      transition: background-color 0.3s ease;
       width: 100%;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
     }
-
     form button:hover {
-      background-color: #1e7e34;
+      background-color: #005fa3;
     }
-
-    /* Responsive */
-    @media(max-width: 700px) {
+    @media (max-width: 700px) {
       .hero {
         flex-direction: column;
-      }
-      .hero-image img {
-        max-width: 100%;
       }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Logo Section -->
     <div class="logo-section">
-      <img src="https://passionate-mnprtchhl2992.wordpress.com/wp-content/uploads/2025/07/2.png.png" alt="Winnipeg Pro Drain Cleaning Services" />
+      <img src="https://passionate-mnprtchhl2992.wordpress.com/wp-content/uploads/2025/07/2.png.png" alt="Logo">
       <h1>Winnipeg Pro Drain Cleaning</h1>
-      <p>Fast, Reliable, 24/7 Emergency Services</p>
+      <p>🚿 Fast, Reliable, 24/7 Emergency Services</p>
     </div>
 
-    <!-- Hero Section -->
     <div class="hero">
-      <div class="hero-text">
-        <h2>Your Local Drain Experts</h2>
+      <div style="flex: 1 1 300px;">
+        <h2>🚨 Your Local Drain Experts</h2>
         <p>From clogged sinks to sewer inspections, we handle it all—fast, affordable, and available 24/7 in Winnipeg.</p>
         <ul>
-          <li>✔ Drain Cleaning</li>
-          <li>✔ Hydro Jetting</li>
-          <li>✔ Sewer Camera Inspection</li>
-          <li>✔ Emergency Services</li>
+          <li>Drain Cleaning</li>
+          <li>Hydro Jetting</li>
+          <li>Sewer Camera Inspection</li>
+          <li>Emergency Services</li>
         </ul>
-        <a href="tel:2043994413" class="call-button">Call Now: 204-399-4413</a>
+        <a href="tel:2043994413" class="call-button">📞 Call Now: 204-399-4413</a>
       </div>
       <div class="hero-image">
-        <img src="https://passionate-mnprtchhl2992.wordpress.com/wp-content/uploads/2025/07/chatgpt-image-jul-27-2025-12_56_38-pm.png" alt="Drain Cleaning Winnipeg" />
+        <img src="https://passionate-mnprtchhl2992.wordpress.com/wp-content/uploads/2025/07/chatgpt-image-jul-27-2025-12_56_38-pm.png" alt="Service Image">
       </div>
     </div>
 
-    <!-- Contact Section -->
     <div class="contact-section">
-      <h3>Contact Us</h3>
-      <p>Open 24/7 • Call or Book Online Anytime</p>
-      <a id="bookOnlineBtn">Book Online</a>
+      <h3>📬 Contact Us</h3>
+      <p>We’re open 24/7. Call or Book Online Anytime!</p>
+      <button class="book-btn" onclick="openModal()">📝 Book Online</button>
     </div>
   </div>
 
-  <!-- Modal Popup Contact Form -->
+  <!-- Contact Modal -->
   <div id="contactModal" class="modal">
     <div class="modal-content">
-      <span class="close-btn" id="closeModal">&times;</span>
-      <h2>Book Online</h2>
-      <form id="contactForm">
-        <label for="name">Name*</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Email*</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4"></textarea>
-
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2>📝 Book Online</h2>
+      <form onsubmit="submitForm(event)">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="4"></textarea>
         <button type="submit">Submit</button>
       </form>
     </div>
   </div>
 
+  <!-- Thank You Modal -->
+  <div id="thankYouModal" class="thankyou-modal modal">
+    <div class="thankyou-content">
+      <span class="close-btn" onclick="closeThankYou()">&times;</span>
+      <h2>🎉 Thank you!</h2>
+      <p>Your message has been sent. We’ll reach out shortly!</p>
+    </div>
+  </div>
+
   <script>
-    // Elements
-    const modal = document.getElementById('contactModal');
-    const openBtn = document.getElementById('bookOnlineBtn');
-    const closeBtn = document.getElementById('closeModal');
-    const form = document.getElementById('contactForm');
-
-    // Open modal
-    openBtn.addEventListener('click', () => {
-      modal.style.display = 'flex';
-    });
-
-    // Close modal
-    closeBtn.addEventListener('click', () => {
-      modal.style.display = 'none';
-    });
-
-    // Close modal when clicking outside content
-    window.addEventListener('click', e => {
-      if (e.target === modal) {
-        modal.style.display = 'none';
+    function openModal() {
+      document.getElementById('contactModal').style.display = 'flex';
+    }
+    function closeModal() {
+      document.getElementById('contactModal').style.display = 'none';
+    }
+    function submitForm(event) {
+      event.preventDefault();
+      closeModal();
+      document.getElementById('thankYouModal').style.display = 'flex';
+    }
+    function closeThankYou() {
+      document.getElementById('thankYouModal').style.display = 'none';
+    }
+    window.onclick = function(event) {
+      if (event.target.classList.contains('modal')) {
+        closeModal();
+        closeThankYou();
       }
-    });
-
-    // Handle form submit
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-
-      // Normally here you'd send data to server or email service
-
-      alert('Thank you for booking! We will get back to you shortly.');
-
-      form.reset();
-      modal.style.display = 'none';
-    });
+    }
   </script>
+<!-- WhatsApp Chat Button with Animation and Label -->
+<a href="https://wa.me/12043994413?text=Hi%20there,%20how%20may%20I%20help%20you%3F" 
+   class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="whatsapp-icon">
+  <span class="whatsapp-label">Chat Now</span>
+</a>
+
+<style>
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    background: #25D366;
+    padding: 8px 14px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    animation: bounce 2s infinite;
+  }
+
+  .whatsapp-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+  }
+
+  .whatsapp-label {
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    display: inline-block;
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+  }
+
+  /* Hide label on small screens */
+  @media (max-width: 600px) {
+    .whatsapp-label {
+      display: none;
+    }
+    .whatsapp-float {
+      padding: 10px;
+      border-radius: 50%;
+    }
+    .whatsapp-icon {
+      margin-right: 0;
+    }
+  }
+</style>
 </body>
 </html>
